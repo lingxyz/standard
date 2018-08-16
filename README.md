@@ -1,6 +1,8 @@
-# 开发规范
+# 大前端开发规范
 
 - [命名规范](命名规范.md)
+
+## Todo
 - [包结构规范](https://github.com/ecomfe/spec/blob/master/package.md)
 - [项目目录结构规范](项目目录结构规范.md)
 - [模块和加载器规范](模块和加载器规范.md)
@@ -17,9 +19,14 @@
 - [发布规范](发布规范.md)
 
 
-参考资料：https://www.zhihu.com/question/28376083
+## 参考资料
 
-草稿：
+https://www.zhihu.com/question/28376083
+
+## 🤔
+nodejs开发规范
+大前端设计规范（前端与微服务中间层）
+
 ``关键点``
 
 接口参数注释
