@@ -1,22 +1,20 @@
 # 大前端开发规范
 
 - [命名规范](命名规范.md)
-
-## Todo
-- [包结构规范](https://github.com/ecomfe/spec/blob/master/package.md)
-- [项目目录结构规范](项目目录结构规范.md)
-- [模块和加载器规范](模块和加载器规范.md)
-- [HTML编码规范](HTML编码规范.md)
-- [CSS编码规范](CSS编码规范md)
-- [stylus编码规范](stylus编码规范.md)
-- [JavaScript编码规范](JavaScript编码规范.md)
-- [前后端数据传输标准](前后端数据传输标准.md)
-- [Vue编码规范](Vue编码规范.md)
-- [编辑器配置和构建检查](编辑器配置和构建检查.md)
+- [包结构规范](https://github.com/ecomfe/spec/blob/master/package.md)`Todo`
+- [项目目录结构规范](项目目录结构规范.md)`Todo`
+- [模块和加载器规范](模块和加载器规范.md)`Todo`
+- [HTML编码规范](HTML编码规范.md)`Todo`
+- [CSS编码规范](CSS编码规范md)`Todo`
+- [stylus编码规范](stylus编码规范.md)`Todo`
+- [JavaScript编码规范](JavaScript编码规范.md)`Todo`
+- [前后端数据传输标准](前后端数据传输标准.md)`Todo`
+- [Vue编码规范](Vue编码规范.md)`Todo`
+- [编辑器配置和构建检查](编辑器配置和构建检查.md)`Todo`
 
 - [Git版本管理规范](Git版本管理规范.md)
 
-- [发布规范](发布规范.md)
+- [发布规范](发布规范.md)`Todo`
 
 
 ## 参考资料
