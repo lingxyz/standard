@@ -2,7 +2,7 @@
 
 - [命名规范](命名规范.md)
 - [包结构规范](https://github.com/ecomfe/spec/blob/master/package.md)`Todo`
-- [项目目录结构规范](项目目录结构规范.md)`Todo`
+- [项目目录结构规范](项目目录结构规范.md)
 - [模块和加载器规范](模块和加载器规范.md)`Todo`
 - [HTML编码规范](HTML编码规范.md)`Todo`
 - [CSS编码规范](CSS编码规范md)`Todo`
@@ -14,7 +14,7 @@
 
 - [Git版本管理规范](Git版本管理规范.md)
 
-- [发布规范](发布规范.md)`Todo`
+- [发布规范](发布规范.md)
 
 
 ## 参考资料
