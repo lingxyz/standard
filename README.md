@@ -33,10 +33,11 @@ nodejs开发规范
 方法唯一性
 变量唯一性
 
-todo注释
+todo：注释
 
-stylus 不用冒号
+stylus：不用冒号
 
+```
 1.readme
 	目录结构
 	quickstart
@@ -60,3 +61,4 @@ stylus 不用冒号
 8.变量 常量首字母大写
 
 9. 组件要以事业名开头 xsy
+```
