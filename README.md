@@ -7,7 +7,7 @@
 
 ### 代码仓库规范化
 
-- Gitlab 使用规范
+- [Gitlab 使用规范](Gitlab使用规范.md)
 - Git 版本管理规范
 - Git 提交信息规范
 
