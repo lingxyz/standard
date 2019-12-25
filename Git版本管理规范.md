@@ -12,8 +12,8 @@
 | hotfix | hotfix_bug号 | master | master | 生产环境紧急bug修复 |
 | tag | vx.x.x | master | - | master分支的标签 |
 
-> 注意：
-> 若发布流程中使用 `docker build -t <name>:<tag> .`来创建镜像，并且tag的取值为此次发布的分支名称，则分支命名不可使用【release/sprint标记、feature/功能点名称】规则。
+> 注意：<br>
+> 若发布流程中使用 `docker build -t <name>:<tag> .`来创建镜像，并且tag的取值为此次发布的分支名称，则分支命名不可使用【release/sprint标记、feature/功能点名称】规则。<br>
 > 标签名称只支持**小写字母**、**数字**、**连字符**、**下划线**四种，因此建议将斜杠`/`改为下划线`_`进行连接。
 
 注释：
