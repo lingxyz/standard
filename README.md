@@ -1,15 +1,14 @@
-# 大前端开发规范
+# <div align="center">大前端开发规范</div>
 
-## v2.0
-### 公约
+<div align="center">Standards for front-end team development</div>
 
-- [技术选型公约](技术选型公约.md)
+- [技术选型公约](技术选型公约.md) `公约`
+- [Gitlab 使用规范](Gitlab使用规范.md) `代码仓库`
+- [Git 版本管理规范](Git版本管理规范.md) `代码仓库`
+- Git 提交信息规范 `代码仓库`
 
-### 代码仓库规范化
-
-- [Gitlab 使用规范](Gitlab使用规范.md)
-- [Git 版本管理规范](Git版本管理规范.md)
-- Git 提交信息规范
+To Fixed
+---
 
 ### 代码规范化
 
@@ -115,7 +114,7 @@
 ### 业务服务规范化
 - 微信接口调用服务
 
-## v1.0
+## v 1.0
 - [命名规范](命名规范.md)
 - [包结构规范](https://github.com/ecomfe/spec/blob/master/package.md)`Todo`
 - [项目目录结构规范](项目目录结构规范.md)
