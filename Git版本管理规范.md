@@ -20,7 +20,7 @@
 
 - **sprint标记**：格式为 `sprint次数[-title]`，例如`sprint22-map`。若项目不采用敏捷管理方式，此字段可替代为预发布时间，例如`2019-05-20`，完整分支名 `release/2019-05-20`；
 - **功能点名称**：格式为小写连字符 `-`，例如：用户详情 `feature/user-details`；
-- **bug号**：为修复对应的 [Jira](http://jira.shinho.net.cn/) Bug编号。
+- **bug号**：为修复对应的 [Jira](https://www.atlassian.com/software/jira) Bug编号。
 
 ### 说明
 
