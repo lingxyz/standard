@@ -1,6 +1,7 @@
 # <div align="center">大前端开发规范</div>
 
 <div align="center">Standards for front-end team development</div>
+
 - [技术选型公约](技术选型公约.md) `公约`
 - [Gitlab 使用规范](Gitlab使用规范.md) `代码仓库`
 - [Git 版本管理规范](Git版本管理规范.md) `代码仓库`
