@@ -1,8 +1,6 @@
----
-description: 大前端团队开发规范。Standards for front-end team development.
----
-
 # 目录
+
+大前端团队开发规范。Standards for front-end team development.
 
 ### 公约
 
