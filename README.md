@@ -2,11 +2,11 @@
 
 大前端团队开发规范。Standards for front-end team development.
 
-### 公约
+## 公约
 
 * [技术选型公约](convention.md)
 
-### 代码仓库规范
+## 代码仓库规范
 
 * [Gitlab 使用规范](code-repository/gitlab-usage.md)
 * [Git 版本管理规范](code-repository/git-workflow.md)
@@ -37,7 +37,7 @@
 
 ### 代码编写规范
 
-* 代码注释规范
+* [代码注释规范](code-edit/code-comment.md)
 * 代码检测规范
 * 编辑器使用推荐-VSCode
 

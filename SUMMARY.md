@@ -6,6 +6,8 @@
   * [Git提交信息规范](code-repository/git-commit-message.md)
   * [GitLab使用规范](code-repository/gitlab-usage.md)
   * [Git版本管理规范](code-repository/git-workflow.md)
+* [代码编写规范](code-edit)
+	* [代码注释规范](code-edit/code-comment.md)
 * [drafts](drafts/README.md)
   * [前后端数据传输标准](drafts/qian-hou-duan-shu-ju-chuan-shu-biao-zhun.md)
   * [模块和加载器规范](drafts/mo-kuai-he-jia-zai-qi-gui-fan.md)
