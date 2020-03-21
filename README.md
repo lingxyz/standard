@@ -1,4 +1,4 @@
-# 目录
+# 前端开发规范
 
 大前端团队开发规范。Standards for front-end team development.
 
@@ -75,7 +75,7 @@
 
 ## 组件规范化
 
-* [NPM 私服使用规范](components/npm-private-server)
+* [NPM 私服使用规范](components/npm-private-server.md)
 * NPM 包管理规范
 * JavaScript 插件：JS 工具函数 / Fetch / Cordova-plugins / 短信发送
 * Vue 插件：过滤器 / 转场动画 / 路由生成
@@ -99,7 +99,7 @@
 
 * 数据模拟：前端框架内部mock集成
 * 接口展示、模拟与测试平台Yapi
-* 应用错误监控与报警：Fundebug 对外项目 / Sentry 内部项目
+* [应用错误监控与报警](test/client-error-monitor.md)
 * 单元测试 待扩充
 * 集成测试 待扩充
 
