@@ -75,8 +75,8 @@
 
 ## 组件规范化
 
+* [NPM 包管理规范](components/npm-package.md)
 * [NPM 私服使用规范](components/npm-private-server.md)
-* NPM 包管理规范
 * JavaScript 插件：JS 工具函数 / Fetch / Cordova-plugins / 短信发送
 * Vue 插件：过滤器 / 转场动画 / 路由生成
 * Vue H5 组件库
