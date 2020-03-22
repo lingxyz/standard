@@ -38,7 +38,7 @@
 ### 代码编写规范
 
 * [代码注释规范](code-edit/code-comment.md)
-* 代码检测规范
+* [代码检测规范](code-edit/code-lint.md)
 * 编辑器使用推荐-VSCode
 
 ## 框架规范化
@@ -71,7 +71,6 @@
 
 * js-plugin-template
 * Vue-component-template
-* java-package-template
 
 ## 组件规范化
 

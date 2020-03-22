@@ -8,6 +8,7 @@
   * [Git版本管理规范](code-repository/git-workflow.md)
 * [代码编写规范](code-edit/README.md)
   * [代码注释规范](code-edit/code-comment.md)
+  * [代码检测规范](code-edit/code-lint.md)
 * [组件规范](components/README.md)
   * [NPM 包管理规范](components/npm-package.md)
   * [NPM 私服使用规范](components/npm-private-server.md)
