@@ -12,6 +12,8 @@
 * [组件规范](components/README.md)
   * [NPM 包管理规范](components/npm-package.md)
   * [NPM 私服使用规范](components/npm-private-server.md)
+* [数据规范](data/README.md)
+	* [REATful API 规范](data/restful-api.md)
 * [测试规范](test/README.md)
   * [应用错误监控与分析](test/client-error-monitor.md)
 

@@ -89,7 +89,7 @@
 ## 数据结构规范化
 
 * JavaScript 数据结构规范
-* REATful API 规范
+* [REATful API 规范](data/restful-api.md)
 * 数据存储规范
 * 数据流转规范
 * 数据库设计规范
