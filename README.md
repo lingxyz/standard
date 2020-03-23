@@ -88,7 +88,7 @@
 
 ## 数据结构规范化
 
-* JavaScript 数据结构规范
+* [JavaScript 数据结构规范](data/structure.md)
 * [REATful API 规范](data/restful-api.md)
 * 数据存储规范
 * 数据流转规范
@@ -110,8 +110,4 @@
 * Jira项目发布任务信息说明
 * CDN建设与非覆盖式发布
 * 本地Docker构建统一环境
-
-## 业务服务规范化
-
-* 微信接口调用服务
 
