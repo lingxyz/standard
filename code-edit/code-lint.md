@@ -1,34 +1,32 @@
 # 代码检测规范
 
-<div align="center"><img src="/images/frontend/eslint.png" width="400"></div>
-
 ## 风格规范
 
 采用 `Standard` 风格标准，具体规范指南：
 
-- `Javascript` 检测：[JavaScript Standard Style](https://standardjs.com/)；
-- `Vue.js` 风格检测：[Vue Style Guide](https://vuejs.github.io/eslint-plugin-vue/rules/)。
+* `Javascript` 检测：[JavaScript Standard Style](https://standardjs.com/)；
+* `Vue.js` 风格检测：[Vue Style Guide](https://vuejs.github.io/eslint-plugin-vue/rules/)。
 
 ## 检测工具
 
 使用 `ESlint` 工具及其套件
 
-- 检测工具：
-  - [eslint](https://www.npmjs.com/package/eslint)。
-- 关联包：
-  - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)；
-  - [eslint-plugin-node](https://www.npmjs.com/package/eslint-plugin-node)；
-  - [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)。
-- 风格预设：
-  - [eslint-config-standard](https://www.npmjs.com/package/eslint-config-standard)；
-  - [eslint-plugin-standard](https://www.npmjs.com/package/eslint-plugin-standard)；
-  - [eslint-plugin-vue](https://vuejs.github.io/eslint-plugin-vue/user-guide/)：`Vue.js` 组件检测使用。
+* 检测工具：
+  * [eslint](https://www.npmjs.com/package/eslint)。
+* 关联包：
+  * [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)；
+  * [eslint-plugin-node](https://www.npmjs.com/package/eslint-plugin-node)；
+  * [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)。
+* 风格预设：
+  * [eslint-config-standard](https://www.npmjs.com/package/eslint-config-standard)；
+  * [eslint-plugin-standard](https://www.npmjs.com/package/eslint-plugin-standard)；
+  * [eslint-plugin-vue](https://vuejs.github.io/eslint-plugin-vue/user-guide/)：`Vue.js` 组件检测使用。
 
 ## 检测配置
 
 ### 基础配置
 
-```js
+```javascript
 // .eslintrc 取自 vue-cli3.0
 {
   "root": true,
@@ -47,7 +45,7 @@
 
 ### `Vue.js` 项目配置
 
-```js
+```javascript
 // .eslintrc 取自 vue-cli3.0
 {
   "root": true,
@@ -69,13 +67,9 @@
 
 在项目根目录添加 `.eslintignore` 文件，填写需要忽略检测的文件夹。
 
-```bash {1}
-!.vuepress/    # 在文件或文件夹前添加感叹号表示不忽略
-node_modules/
-dist/
-public/
-```
+\`\`\`bash {1} !.vuepress/ \# 在文件或文件夹前添加感叹号表示不忽略 node\_modules/ dist/ public/
 
+```text
 ### 忽略不需检测代码
 
 ```js
@@ -134,32 +128,31 @@ alert('foo'); // eslint-disable-line no-alert, quotes, semi
 alert('foo');
 ```
 
-
 ## 代码检测
 
 ### 编辑器实时检测
 
-使用 `vscode` 编辑器并安装插件 [ESLint](/frontend/standard/editor.html#eslint) 可实现实时检测。
+使用 `vscode` 编辑器并安装插件 [ESLint](https://github.com/CookX/fe-standard/tree/7a7861dda6f5f0676a26729f880269303623e254/frontend/standard/editor.html#eslint) 可实现实时检测。
 
-#### 编辑器扩展(VSCode)
+#### 编辑器扩展\(VSCode\)
 
-- 代码风格检查扩展：[ESlint（点击安装）](vscode:extension/dbaeumer.vscode-eslint)；
-- 编辑器设置扩展：[EditorConfig for VS Code（点击安装）](vscode:extension/EditorConfig.EditorConfig)；
-- 编辑器设置推荐：[编辑器相关推荐](/frontend/standard/editor.html)。
+* 代码风格检查扩展：[ESlint（点击安装）](vscode:extension/dbaeumer.vscode-eslint)；
+* 编辑器设置扩展：[EditorConfig for VS Code（点击安装）](vscode:extension/EditorConfig.EditorConfig)；
+* 编辑器设置推荐：[编辑器相关推荐](https://github.com/CookX/fe-standard/tree/7a7861dda6f5f0676a26729f880269303623e254/frontend/standard/editor.html)。
 
 #### 安装插件优点
 
-- 自动根据项目 `.eslintrc` 配置文件进行代码检测；
-- 自动更加项目 `.editorconfig` 文件设置编辑器；
-- 实时检测和提醒代码风格问题；
-- 早一步发现代码中一些不必要的错误；
-- 帮助养成规范编码的习惯。
+* 自动根据项目 `.eslintrc` 配置文件进行代码检测；
+* 自动更加项目 `.editorconfig` 文件设置编辑器；
+* 实时检测和提醒代码风格问题；
+* 早一步发现代码中一些不必要的错误；
+* 帮助养成规范编码的习惯。
 
 ### `Webpack` 检测
 
-在提供的开发模板中内置并默认启用（*具体配置请参照以下代码*）。
+在提供的开发模板中内置并默认启用（_具体配置请参照以下代码_）。
 
-```js
+```javascript
 // webpack.config.js配置文件
 
 module.exports = {
@@ -185,9 +178,9 @@ module.exports = {
 
 ### Git代码提交检测
 
-使用的工具 [husky](https://www.npmjs.com/package/husky) 提供提交检查支持。*以下配置和工具会在脚手架中默认支持及启用。*
+使用的工具 [husky](https://www.npmjs.com/package/husky) 提供提交检查支持。_以下配置和工具会在脚手架中默认支持及启用。_
 
-```js
+```javascript
 {
   "script": {
     // vue-cli 3.0 之前
@@ -203,3 +196,4 @@ module.exports = {
   }
 }
 ```
+

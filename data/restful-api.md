@@ -1,9 +1,9 @@
 ---
 author: 阮一峰
-original: http://www.ruanyifeng.com/blog/2018/10/restful-api-best-practices.html
+original: 'http://www.ruanyifeng.com/blog/2018/10/restful-api-best-practices.html'
 ---
 
-# RESTful API规范
+# REATful API 规范
 
 `RESTful`是目前最流行的`API`设计规范，用于`Web`数据接口的设计。它的大原则容易把握，但是细节不容易做对。本文总结`RESTful`的设计细节，介绍如何设计出易于理解和使用的`API`。
 
@@ -31,7 +31,7 @@ DELETE：删除（Delete）
 
 这时，客户端发出的`HTTP`请求，要加上`X-HTTP-Method-Override`属性，告诉服务器应该使用哪一个动词，覆盖`POST`方法。
 
-```nginx
+```text
 POST /api/Person/4 HTTP/1.1
 X-HTTP-Method-Override: PUT
 # 上面代码中，X-HTTP-Method-Override指定本次请求的方法是PUT，而不是POST。
@@ -59,7 +59,7 @@ X-HTTP-Method-Override: PUT
 
 常见的情况是，资源需要多级分类，因此很容易写出多级的`URL`，比如获取某个作者的某一类文章。
 
-```nginx
+```text
 GET /authors/12/categories/2
 ```
 
@@ -67,19 +67,19 @@ GET /authors/12/categories/2
 
 更好的做法是，除了第一级，其他级别都用查询字符串表达。
 
-```nginx
+```text
 GET /authors/12?categories=2
 ```
 
 下面是另一个例子，查询已发布的文章。你可能会设计成下面的`URL`。
 
-```nginx
+```text
 GET /articles/published
 ```
 
 查询字符串的写法明显更好。
 
-```nginx
+```text
 GET /articles?published=true
 ```
 
@@ -132,10 +132,10 @@ HTTP/1.1 202 Accepted
 
 ### `3xx`状态码
 
-- **`301` Redirect**：永久重定向。
-- **`302` Temporarily Redirect**：暂时重定向，常用于GET请求。
-- **`303` See Other**：暂时重定向（参考另一个`URL`），常用于`POST`、`PUT`和`DELETE`请求。
-- **`307` Temporarily Redirect**：暂时重定向，常用于GET请求。
+* **`301` Redirect**：永久重定向。
+* **`302` Temporarily Redirect**：暂时重定向，常用于GET请求。
+* **`303` See Other**：暂时重定向（参考另一个`URL`），常用于`POST`、`PUT`和`DELETE`请求。
+* **`307` Temporarily Redirect**：暂时重定向，常用于GET请求。
 
 `API`用不到`301`状态码（永久重定向）和`302`状态码（暂时重定向，`307`也是这个含义），因为它们可以由应用级别返回，浏览器会直接跳转，`API`级别可以不考虑这两种情况。
 
@@ -150,22 +150,22 @@ Location: /api/orders/12345
 
 `4xx`状态码表示客户端错误，主要有下面几种:
 
-- **`400` Bad Request**：服务器不理解客户端的请求，未做任何处理。
-- **`401` Unauthorized**：用户未提供身份验证凭据，或者没有通过身份验证。
-- **`403` Forbidden**：用户通过了身份验证，但是不具有访问资源所需的权限。
-- **`404` Not Found**：所请求的资源不存在，或不可用。
-- **`405` Method Not Allowed**：用户已经通过身份验证，但是所用的 HTTP 方法不在他的权限之内。
-- **`410` Gone**：所请求的资源已从这个地址转移，不再可用。
-- **`415` Unsupported Media Type**：客户端要求的返回格式不支持。比如，API 只能返回 JSON 格式，但是客户端要求返回 XML 格式。
-- **`422` Unprocessable Entity** ：客户端上传的附件无法处理，导致请求失败。
-- **`429` Too Many Requests**：客户端的请求次数超过限额。
+* **`400` Bad Request**：服务器不理解客户端的请求，未做任何处理。
+* **`401` Unauthorized**：用户未提供身份验证凭据，或者没有通过身份验证。
+* **`403` Forbidden**：用户通过了身份验证，但是不具有访问资源所需的权限。
+* **`404` Not Found**：所请求的资源不存在，或不可用。
+* **`405` Method Not Allowed**：用户已经通过身份验证，但是所用的 HTTP 方法不在他的权限之内。
+* **`410` Gone**：所请求的资源已从这个地址转移，不再可用。
+* **`415` Unsupported Media Type**：客户端要求的返回格式不支持。比如，API 只能返回 JSON 格式，但是客户端要求返回 XML 格式。
+* **`422` Unprocessable Entity** ：客户端上传的附件无法处理，导致请求失败。
+* **`429` Too Many Requests**：客户端的请求次数超过限额。
 
 ### `5xx`状态码
 
 `5xx`状态码表示服务端错误。一般来说，`API`不会向用户透露服务器的详细信息，所以只要两个状态码就够了。
 
-- **`500` Internal Server Error**：客户端请求有效，服务器处理时发生了意外。
-- **`503` Service Unavailable**：服务器无法处理请求，一般用于网站维护状态。
+* **`500` Internal Server Error**：客户端请求有效，服务器处理时发生了意外。
+* **`503` Service Unavailable**：服务器无法处理请求，一般用于网站维护状态。
 
 ## 服务器回应
 
@@ -218,7 +218,7 @@ Content-Type: application/json
 
 举例来说，GitHub 的 API 都在 api.github.com 这个域名。访问它，就可以得到其他 URL。
 
-```json
+```javascript
 {
   "feeds_url": "https://api.github.com/feeds",
   "followers_url": "https://api.github.com/user/followers",
@@ -248,5 +248,6 @@ Content-Type: application/json
 
 ## 参考链接
 
-- [RESTful API Design: 13 Best Practices to Make Your Users Happy](https://blog.florimondmanca.com/restful-api-design-13-best-practices-to-make-your-users-happy), by Florimond Manca
-- [API design](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design), by MicroSoft Azure
+* [RESTful API Design: 13 Best Practices to Make Your Users Happy](https://blog.florimondmanca.com/restful-api-design-13-best-practices-to-make-your-users-happy), by Florimond Manca
+* [API design](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design), by MicroSoft Azure
+

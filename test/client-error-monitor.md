@@ -1,4 +1,4 @@
-# 应用错误收集与分析
+# 应用错误监控与分析
 
 使用第三方工具 [Fundebug](https://www.fundebug.com/) 和 [Sentry](https://docs.sentry.io) 进行客户端的错误日志收集，发生错误的用户行为记录，协助前端解决不同用户客户端的错误问题。
 
@@ -10,16 +10,17 @@ Fundebug 和 Sentry 都支持主流编程语言和框架。
 
 由于 Fundebug 付费，使用见[官方文档](https://docs.fundebug.com/)或咨询客服即可。
 
-建议充分利用[属性配置]()来区分不同环境和版本，便于在后台快速筛选问题：
+建议充分利用[属性配置](client-error-monitor.md)来区分不同环境和版本，便于在后台快速筛选问题：
 
-- apikey：项目区分标识
-- appversion：应用版本，建议配置编译时自动获取package.json中的应用版本号
-- releasestage：应用开发阶段，如 `dev`, `test`, `uat`, `prd`
+* apikey：项目区分标识
+* appversion：应用版本，建议配置编译时自动获取package.json中的应用版本号
+* releasestage：应用开发阶段，如 `dev`, `test`, `uat`, `prd`
 
 通过环境变量区分配置示例：
 
 `package.json`：
-```json
+
+```javascript
 "scripts": {
   "dev": "cross-env NODE_ENV=dev nuxt",
   "generate:test": "cross-env NODE_ENV=test nuxt generate",
@@ -27,13 +28,17 @@ Fundebug 和 Sentry 都支持主流编程语言和框架。
   "generate:prd": "cross-env NODE_ENV=prd nuxt generate"
 },
 ```
+
 `webpack`：
-```js
+
+```javascript
 // 将node环境变量NODE_ENV传递给浏览器端
 NODE_ENV: process.env.NODE_ENV
 ```
+
 配置文件`config.js`：
-```js
+
+```javascript
 const config = {
   // dev 环境配置
   dev: {
@@ -60,28 +65,30 @@ const config = {
 export const fundebugSilent = config.fundebugSilent
 export const fundebugApiKey = config.fundebugApiKey
 ```
+
 `fundebugInit.js`：
-```js
+
+```javascript
 fundebug.apikey = fundebugApiKey
 fundebug.appVersion = Package.version
 fundebug.releasestage = process.env.NODE_ENV
 fundebug.silent = fundebugSilent
 ```
 
-
 ## Sentry 接入
 
 接入 `Sentry` 需要引入 `SDK` ，配置 `DSN` 并初始化
 
-`DSN` 在 [创建项目](#创建项目) 时获取
+`DSN` 在 [创建项目](client-error-monitor.md#创建项目) 时获取
 
 `DSN` 包括
-- PROTOCOL 协议
-- PUBLIC_KEY 公钥
-- HOST 服务地址
-- PROJECT_ID 项目ID
 
-```js
+* PROTOCOL 协议
+* PUBLIC\_KEY 公钥
+* HOST 服务地址
+* PROJECT\_ID 项目ID
+
+```javascript
 '{PROTOCOL}://{PUBLIC_KEY}@{HOST}/{PROJECT_ID}'
 
 // 示例
@@ -89,21 +96,21 @@ fundebug.silent = fundebugSilent
 ```
 
 ### 接入引导
- - [浏览器原生 JavaScript](https://docs.sentry.io/error-reporting/quickstart/?platform=browser)
- - [Vue](https://docs.sentry.io/platforms/javascript/vue/)
- - [NodeJS](https://docs.sentry.io/platforms/node/?platform=node)
- - [Angular](https://docs.sentry.io/platforms/javascript/angular/)
- - [React](https://docs.sentry.io/platforms/javascript/react/)
- - [Cordova](https://docs.sentry.io/platforms/javascript/cordova/)
- - [Java](https://docs.sentry.io/clients/java/)
- - [其他](https://docs.sentry.io/platforms/)
 
+* [浏览器原生 JavaScript](https://docs.sentry.io/error-reporting/quickstart/?platform=browser)
+* [Vue](https://docs.sentry.io/platforms/javascript/vue/)
+* [NodeJS](https://docs.sentry.io/platforms/node/?platform=node)
+* [Angular](https://docs.sentry.io/platforms/javascript/angular/)
+* [React](https://docs.sentry.io/platforms/javascript/react/)
+* [Cordova](https://docs.sentry.io/platforms/javascript/cordova/)
+* [Java](https://docs.sentry.io/clients/java/)
+* [其他](https://docs.sentry.io/platforms/)
 
 ### 小程序中接入
-因小程序 `ajax` 请求方式不同，须下载并引入第三方文件插件。
-[Raven-weapp](https://github.com/youzan/raven-weapp)
 
-```js
+因小程序 `ajax` 请求方式不同，须下载并引入第三方文件插件。 [Raven-weapp](https://github.com/youzan/raven-weapp)
+
+```javascript
 var Raven = require('./utils/raven.min')
 
 // 初始化 `协议` `公钥` `服务地址` `项目ID`
@@ -122,3 +129,4 @@ onError(msg) {
   })
 }
 ```
+

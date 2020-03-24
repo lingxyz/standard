@@ -1,17 +1,17 @@
-# NPM私服使用规范
+# NPM 私服使用规范
 
 由于企业中前端项目需要使用npm安装私有依赖，所以需要建立`NPM私服`。
 
 推荐使用开源项目[verdaccio](https://github.com/verdaccio)搭建`NPM私服`。
 
-*Tip：如果需要在npm官方镜像发布包，需要切回npm官方镜像。*
+_Tip：如果需要在npm官方镜像发布包，需要切回npm官方镜像。_
 
 ## 注册登录
 
 推荐使用邮箱申请，私服维护者统一注册。注册请将个人信息按照以下格式向[FE Arch.](mailto:fe-arch@companydomain.com?subject=NPM私服账号注册申请)提交申请：
 
-- 用户名：默认为 `姓名全拼_工号`，非正式员工建议用`身份证后八位`代替工号
-- 默认密码：`用户名后8位`
+* 用户名：默认为 `姓名全拼_工号`，非正式员工建议用`身份证后八位`代替工号
+* 默认密码：`用户名后8位`
 
 ## 初始化 NPM 包
 
@@ -78,7 +78,7 @@ npm install MODULE_NAME
 
 ## 发布公用包到`npm`私服
 
-*Tip：大多数同学不用发布，可忽略此处。发布包必须登录。*
+_Tip：大多数同学不用发布，可忽略此处。发布包必须登录。_
 
 ### 发布
 
@@ -87,7 +87,7 @@ npm addUser # 按照要求填写用户名、密码邮箱
 npm publish
 ```
 
-### 取消发布(半小时内执行)
+### 取消发布\(半小时内执行\)
 
 ```bash
 npm unpublish -f
@@ -100,3 +100,4 @@ npm 安装 git 仓库基于以下协议：
 ```bash
 <protocol>://[<user>[:<password>]@]<hostname>[:<port>][:][/]<path>[#<commit-ish> | #semver:<semver>]
 ```
+

@@ -8,13 +8,13 @@
 
 good
 
-```js
+```javascript
 var user = new User(); // 实例化一个用户
 ```
 
 bad
 
-```js
+```javascript
 var user = new User(); /*实例化一个用户*/
 var user = new User(); //实例化一个用户
 ```
@@ -25,7 +25,7 @@ var user = new User(); //实例化一个用户
 
 good
 
-```js
+```javascript
 /*
  * 实例化一个用户
  * anything...
@@ -35,7 +35,7 @@ var user = new User();
 
 bad
 
-```js
+```javascript
 //  实例化一个用户
 //  anything...
 var user = new User();
@@ -43,8 +43,8 @@ var user = new User();
 
 ### 字段/属性
 
-- 字段/属性上方双斜线注释
-- 双斜线后面加空格，注释上方要空行
+* 字段/属性上方双斜线注释
+* 双斜线后面加空格，注释上方要空行
 
 ```java
 // JAVA
@@ -71,7 +71,7 @@ public class EmailBody {
 }
 ```
 
-```js
+```javascript
 // JS
 
 class EmailBody {
@@ -115,7 +115,7 @@ public String foo(String a,Number b,Boolean... c){
 }
 ```
 
-```JS
+```javascript
 // JS (vscode 可以使用 Document This 插件快速生成)
 
 /**
@@ -133,9 +133,9 @@ function foo(a, b, c, d) {
 
 ### 类/接口
 
-- 必须添加类/接口的描述、作者、创建时间
-- 必须为类的构造函数添加注释
-- 构造函数注明@constructor 标签
+* 必须添加类/接口的描述、作者、创建时间
+* 必须为类的构造函数添加注释
+* 构造函数注明@constructor 标签
 
 ```java
 // JAVA
@@ -156,7 +156,7 @@ public class Test Button {
 }
 ```
 
-```js
+```javascript
 // JS
 
 /**
@@ -183,7 +183,7 @@ class Test Button {
 
 必须注释文件说明、作者、创建时间，其他各类标签请参考：[jsDoc](https://en.wikipedia.org/wiki/JSDoc) 或 [JavaDoc](https://en.wikipedia.org/wiki/Javadoc)
 
-```js
+```javascript
 /**
  * 文件说明
  * @author 作者
@@ -193,61 +193,57 @@ class Test Button {
 
 ### 特殊标记
 
-- TODO
+* TODO
 
 待办事宜 （TODO） 表示需要实现，但目前还未实现的功能
 
-```js
+```javascript
 // TODO: 深度优先算法实现
 ```
 
-- FIXME
+* FIXME
 
 错误，不能工作 （FIXME） 在注释中用 FIXME 标记某代码是错误的，而且不能工作，需要及时纠正的情况
 
-```js
+```javascript
 // FIXME: 逻辑与实际业务不符
 ```
 
 ### 其他
 
-- 中英文规范
-与其“半吊子”英文来注释，不如用中文注释把问题说清楚专有名词与关键字保持英文原文即可
+* 中英文规范
+
+  与其“半吊子”英文来注释，不如用中文注释把问题说清楚专有名词与关键字保持英文原文即可
 
 good
 
-```js
+```javascript
 TCP_TIMEOUT; // tcp连接超时
 ```
 
 bad
 
-```js
+```javascript
 TCP_TIMEOUT; // 传输控制协议连接超时
 ```
 
-- 复杂的逻辑
-复杂的代码请写明注释  
-对于别的程序员能够迅速了解到代码背后的信息  
-对于自己即使隔很长时间，也能清晰理解当时的思路
-
-- 算法
-使用了某种算法请写明注释，能够让阅读者快速意图
+* 复杂的逻辑 复杂的代码请写明注释 对于别的程序员能够迅速了解到代码背后的信息 对于自己即使隔很长时间，也能清晰理解当时的思路
+* 算法 使用了某种算法请写明注释，能够让阅读者快速意图
 
 ## 前端注释
 
 ### html
 
-- 单行注释
+* 单行注释
 
-```html
+```markup
 <!-- 注释内容 -->
 <div>...</div>
 ```
 
-- 多行注释
+* 多行注释
 
-```html
+```markup
 <!--
 <div>
   <div>...</div>
@@ -257,18 +253,18 @@ TCP_TIMEOUT; // 传输控制协议连接超时
 
 ### stylus
 
-- 单行注释
+* 单行注释
 
-```stylus
+```css
 // Modal header
 .modal-header {
   ...
 }
 ```
 
-- 多行注释
+* 多行注释
 
-```stylus
+```css
 /**
   * Modal header
   */
@@ -281,10 +277,11 @@ TCP_TIMEOUT; // 传输控制协议连接超时
 
 必须注释组件说明、作者、创建时间
 
-```html
+```markup
 <!--
  * @desc 组件描述
  * @author 组件作者
  * @date 2020-12-05
 -->
 ```
+

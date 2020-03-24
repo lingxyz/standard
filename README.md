@@ -1,10 +1,10 @@
-# 前端开发规范
+# 目录
 
 大前端团队开发规范。Standards for front-end team development.
 
 ## 公约
 
-* [技术选型公约](convention.md)
+* [技术选型公约](convention/selection-convention.md)
 
 ## 代码仓库规范
 
