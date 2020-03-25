@@ -6,6 +6,10 @@
 
 * [技术选型公约](convention/selection-convention.md)
 
+### 基础语言规范 <a id="lang"></a>
+
+* [CSS-BEM 规范](lang/css-bem.md)
+
 ## 代码仓库规范 <a id="code-repository"></a>
 
 * [Git提交信息规范](code-repository/git-commit-message.md)
