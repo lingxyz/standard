@@ -8,6 +8,7 @@
 
 ### 基础语言规范 <a id="lang"></a>
 
+* [CSS 规范](lang/css.md)
 * [CSS-BEM 规范](lang/css-bem.md)
 
 ## 代码仓库规范 <a id="code-repository"></a>

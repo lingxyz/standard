@@ -17,7 +17,7 @@
 ### 基础语言规范
 
 * HTML规范
-* CSS规范
+* [CSS 规范](lang/css.md)
 * [CSS-BEM 规范](lang/css-bem.md)
 * JavaScript 规范
 * TypeScript 规范
