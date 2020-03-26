@@ -10,6 +10,7 @@
 
 * [CSS 规范](lang/css.md)
 * [CSS-BEM 规范](lang/css-bem.md)
+* [JavaScript 规范](lang/js.md)
 
 ## 代码仓库规范 <a id="code-repository"></a>
 

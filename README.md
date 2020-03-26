@@ -19,7 +19,7 @@
 * HTML规范
 * [CSS 规范](lang/css.md)
 * [CSS-BEM 规范](lang/css-bem.md)
-* JavaScript 规范
+* [JavaScript 规范](lang/js.md)
 * TypeScript 规范
 * Node.js 规范
 
