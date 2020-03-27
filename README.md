@@ -16,7 +16,7 @@
 
 ### 基础语言规范
 
-* HTML规范
+* [HTML规范](lang/html.md)
 * [CSS 规范](lang/css.md)
 * [CSS-BEM 规范](lang/css-bem.md)
 * [JavaScript 规范](lang/js.md)
