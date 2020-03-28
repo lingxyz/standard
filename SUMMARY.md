@@ -9,6 +9,7 @@
 ### 基础语言规范 <a id="lang"></a>
 
 * [HTML规范](lang/html.md)
+* [HTML-Vue规范](lang/html-vue.md)
 * [CSS 规范](lang/css.md)
 * [CSS-BEM 规范](lang/css-bem.md)
 * [JavaScript 规范](lang/js.md)
