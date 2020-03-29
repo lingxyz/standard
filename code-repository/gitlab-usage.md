@@ -8,8 +8,8 @@
 
 | 信息 | 填写字段 | 规则 | 例 |
 | :--- | :--- | :--- | :--- |
-| 姓名 | Full name | **真实姓名\(中文\)** | 张三 |
-| 用户名 | User name | **姓名全拼\_工号/公司域账号** | zhangsan\_17070022 |
+| 姓名 | Full name | **真实姓名(中文)** | 张三 |
+| 用户名 | User name | **姓名全拼_工号/公司域账号** | zhangsan_17070022 |
 | 邮箱 | Email | **企业个人邮箱** | [zhangsan@companymail.com](mailto:zhangsan@companymail.com) |
 | 头像 | Avatar | 请设置具有个人标志的头像 | - |
 
@@ -95,4 +95,3 @@ hq-admin（总部后台）、merchant-admin（商户后台）、c-ministore（�
 | Guest | 访客 |
 
 > 如需了解对应权限，请查看**GitLab官方权限说明**
-

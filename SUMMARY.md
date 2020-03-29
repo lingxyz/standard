@@ -39,3 +39,7 @@
 
 * [应用错误监控与分析](test/client-error-monitor.md)
 
+## 集成发布规范 <a id="devops"></a>
+
+* [发布流程规范](devops/release-flow.md)
+* [Jira项目发布任务信息说明](devops/release-pr.md)

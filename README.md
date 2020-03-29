@@ -107,8 +107,8 @@
 
 * 开发流程规范
 * 构建与发布规范
-* 发布流程规范 Jenkins + Pipeline + Docker
-* Jira项目发布任务信息说明
+* [发布流程规范](devops/release-flow.md)
+* [Jira项目发布任务信息说明](devops/release-pr.md)
 * CDN建设与非覆盖式发布
 * 本地Docker构建统一环境
 

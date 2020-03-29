@@ -9,11 +9,11 @@
 | master | master | - | - | 主分支 |
 | release | release/sprint标记 | master | master | 待发布的版本 |
 | feature | feature/功能点名称 | master | release | 新功能分支 |
-| hotfix | hotfix\_bug号 | master | master | 生产环境紧急bug修复 |
+| hotfix | hotfix/bug号 | master | master | 生产环境紧急bug修复 |
 | tag | vx.x.x | master | - | master分支的标签 |
 
-> 注意：  
->  若发布流程中使用 `docker build -t <name>:<tag> .`来创建镜像，并且tag的取值为此次发布的分支名称，则分支命名不可使用【release/sprint标记、feature/功能点名称】规则。  
+> 注意：
+>  若发布流程中使用 `docker build -t <name>:<tag> .`来创建镜像，并且tag的取值为此次发布的分支名称，则分支命名不可使用【release/sprint标记、feature/功能点名称】规则。
 >  标签名称只支持**小写字母**、**数字**、**连字符**、**下划线**四种，因此建议将斜杠`/`改为下划线`_`进行连接。
 
 注释：
@@ -86,8 +86,8 @@
 
 ### 生产环境紧急`Bug`修复
 
-* 从master新建分支`hotfix_bug号`进行bug修复
-* 修复完毕并测试通过后，将分支`hotfix_bug号`合并`master`分支发布
+* 从master新建分支`hotfix/bug号`进行bug修复
+* 修复完毕并测试通过后，将分支`hotfix/bug号`合并`master`分支发布
 * 在`master`分支上打上`tag`
 
 ## 附：Git标签操作
@@ -126,4 +126,3 @@ $ git tag -d v0.1.0
 $ git push origin :refs/tags/v0.1.0
 $ git push origin --delete tag v0.1.0
 ```
-
