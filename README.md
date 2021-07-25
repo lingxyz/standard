@@ -1,6 +1,6 @@
 # 目录
 
-大前端团队开发规范。Standards for front-end team development.
+技术团队开发规范。Standards for development team.
 
 ## 公约
 
