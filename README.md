@@ -1,6 +1,6 @@
 # 目录
 
-技术团队开发规范。Standards for development team.
+技术团队开发规范。Standards for development team. [旧版入口](https://standard.zhangling.me)
 
 ## 公约
 

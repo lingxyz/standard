@@ -1,0 +1,19 @@
+name: Build and Deploy - gh-pages
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      with:
+        ssh-key: ${{ secrets.access_token }}
+        branch: gh-pages
+        folder: .
+        # BUILD_SCRIPT: npm install && npm run build && echo 'zhangling.me' > dist/CNAME
