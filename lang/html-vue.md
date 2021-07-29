@@ -767,12 +767,11 @@ computed: {
 
 
 ``` html
-{{
 fullName.split(' ').map(function (word) {
   return word[0].toUpperCase() + word.slice(1);
 }).join(' ');
-}}
 ```
+*备注：由于GitHub编译不通过上述代码省略{{ ... }}包裹*
 
 #### 推荐
 
