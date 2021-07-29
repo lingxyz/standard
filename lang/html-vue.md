@@ -765,7 +765,7 @@ computed: {
 
 #### 不推荐
 
-``` js
+```
 {{
   fullName.split(' ').map(function (word) {
     return word[0].toUpperCase() + word.slice(1)
