@@ -765,11 +765,11 @@ computed: {
 
 #### 不推荐
 
-``` html
+``` js
 {{
   fullName.split(' ').map(function (word) {
     return word[0].toUpperCase() + word.slice(1)
-  }).join(' ')
+  }).join(' ') 
 }}
 ```
 
@@ -1006,4 +1006,3 @@ components/
 |- StudentDashboardSettings.vue
 |- UserProfileOptions.vue
 ```
-
