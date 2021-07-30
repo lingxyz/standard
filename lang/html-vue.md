@@ -765,13 +765,12 @@ computed: {
 
 #### 不推荐
 
-``` js
-{{
-  fullName.split(' ').map(function (word) {
-    return word[0].toUpperCase() + word.slice(1)
-  }).join(' ') 
-}}
+``` html
+fullName.split(' ').map(function (word) {
+  return word[0].toUpperCase() + word.slice(1);
+}).join(' ');
 ```
+*备注：由于GitHub编译不通过上述代码省略{{ ... }}包裹*
 
 
 
