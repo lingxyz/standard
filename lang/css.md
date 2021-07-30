@@ -6,6 +6,16 @@ CSS 作为网页样式的描述语言，在前端一直有着广泛的应用。�
 
 虽然本文档是针对 CSS 设计的，但是在使用各种 CSS 的预编译器(如 less、sass、stylus 等)时，适用的部分也应尽量遵循本文档的约定。
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+
+<script>
+  window.$docsify = {
+    relativePath: true,
+    loadSidebar: true
+  }
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 ## 代码风格
 
 ### 文件
