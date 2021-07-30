@@ -1,2 +1,2 @@
-* [首页](zh-cn/)
-* [指南](zh-cn/guide)
+* [首页](code-repository/)
+* [指南](code-repository/gitlab-usage)
