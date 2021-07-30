@@ -2,10 +2,6 @@
 
 技术团队开发规范。Standards for development team. [旧版入口](https://standard.zhangling.me)
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-<script src="1.js"></script>
-<script src="./1.js"></script>
-
 ## 公约
 
 * [技术选型公约](convention/selection-convention.md)

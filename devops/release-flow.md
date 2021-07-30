@@ -3,7 +3,7 @@
 
 ## 整体流程示意图
 
-![release-flow](../.gitbook/assets/release-flow.svg)
+![release-flow](../assets/release-flow.svg)
 
 ## 提交发布任务
 
