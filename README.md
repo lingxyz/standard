@@ -1,7 +1,5 @@
-# 目录
-
-技术团队开发规范。Standards for development team.  
-[旧版入口](https://standard.zhangling.me)
+# 开发规范
+Standards for development team.  从[wiki](https://github.com/zhanglingme/standard/wiki)获取最新开发版。
 
 ## 公约
 
