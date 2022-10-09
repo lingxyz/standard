@@ -1,6 +1,6 @@
 # 开发规范
 Standards for development team.
-从[standard](https://zhangling.me/standard/)获取官方稳定版。从[wiki](https://github.com/zhanglingme/standard/wiki)获取最新开发版。从[Gitbook](https://standard.zhangling.me)查看旧版本(停止维护)。
+从[语雀](https://www.yuque.com/shinhotech/standard)获取官方稳定版。从[wiki](https://github.com/zhanglingme/standard/wiki)获取最新开发版。
 
 ## 公约
 
