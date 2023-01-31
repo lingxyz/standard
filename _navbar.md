@@ -1,1 +1,1 @@
-* [🏠 主页](https://zhangling.me)
+* [🏠 主页](https://zhangling.site)
