@@ -20,19 +20,19 @@ Standards for development team.
 * **代码规范化**
   * **基础语言规范**
     * [ ] [HTML规范](lang/html.md)
-    * [ ] [HTML-Vue规范](lang/html-vue.md)
     * [ ] [CSS 规范](lang/css.md)
     * [ ] [CSS-BEM 规范](lang/css-bem.md)
     * [ ] [JavaScript 规范](lang/js.md)
     * [ ] TypeScript 规范
     * [ ] Node.js 规范
+    * [ ] Java 规范
 
   * **预编译器规范**
     * [ ] Pug 规范
     * [ ] Stylus 规范
 
   * **框架语言规范**
-    * [ ] HTML-Vue 规范
+    * [ ] [HTML-Vue规范](lang/html-vue.md)
     * [ ] Vue 规范
     * [ ] Egg.js 规范
     * [ ] Nest.js 规范
@@ -44,12 +44,15 @@ Standards for development team.
 
 * **框架规范化**
   * **项目目录结构规范**
-    * [ ] Vue 项目目录结构规范
-    * [ ] Nuxt 项目目录结构规范
-    * [ ] mpvue 项目目录结构规范
-    * [ ] Cordova 项目目录结构规范
-    * [ ] Flutter 项目目录结构规范
-    * [ ] Node 项目目录结构规范
+    * [ ] Vue 框架规范（HTML-Vue、Vue目录结构、template模板）
+    * [ ] Nuxt 框架规范（Nuxt目录结构、template模板）
+    * [ ] mpvue 框架规范（mpvue目录结构、template模板）
+    * [ ] Cordova 框架规范（Cordova目录结构、template模板）
+    * [ ] Flutter 框架规范（Flutter目录结构、template模板）
+    * [ ] Nest.js 框架规范（Nest目录结构、template模板）
+    * [ ] SpringBoot 框架规范（SpringBoot目录结构、template模板）
+    * [ ] 脚手架规范（命令行、可视化）
+    * [ ] 组件/插件/中间件开发模板(js-plugin/Vue-component)
 
   * **脚手架**
     * [ ] 命令行
