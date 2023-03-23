@@ -1,6 +1,4 @@
-# 开发规范
-Standards for development team.
-从[语雀](https://www.yuque.com/shinhotech/standard)获取官方稳定版。从[wiki](https://github.com/lingxyz/standard/wiki)获取最新开发版。
+<!-- docs/_sidebar.md -->
 
 ## 公约
 
@@ -111,11 +109,3 @@ Standards for development team.
 * [Jira项目发布任务信息说明](devops/release-pr.md)
 * CDN建设与非覆盖式发布
 * 本地Docker构建统一环境
-
-## 版权许可
-
-本书采用“保持署名—非商用”创意共享4.0许可证。
-
-只要保持原作者署名和非商用，您可以自由地阅读、分享、修改本书。
-
-详细的法律条文请参见[创意共享](http://creativecommons.org/licenses/by-nc/4.0/)网站。
