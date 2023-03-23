@@ -2,11 +2,15 @@
 Standards for development team.
 
 作者：[Zero](https://zhangling.site)
+
 授权：[保持署名—非商用许可证](./LICENSE)
 
 ## 目录
 * **公约**
   * [ ] [技术选型公约](convention/selection-convention.md)
+
+* 开发流程
+  * [ ] [技术需求撰写规范](process/write-technical-requirements.md)
 
 * **代码仓库规范**
   * [ ] [Gitlab 使用规范](code-repository/gitlab-usage.md)
