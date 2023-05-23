@@ -1,0 +1,8 @@
+[
+  { "text": "🏠", "link": "/" },
+  { "text": "流程规范", "link": "/process/development-process" },
+  { "text": "代码规范", "items": [
+    { "text": "Web前端", "link": "/web/lang/html" },
+    { "text": "Java后端", "link": "/java/java" }
+  ] }
+]

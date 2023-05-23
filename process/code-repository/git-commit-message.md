@@ -28,7 +28,7 @@
 <footer>
 ```
 
-说明： ![image.png](../assets/git-commit-message.png)
+说明： ![image.png](../../assets/git-commit-message.png)
 
 任意一行都不应该超过100字符，这样的信息在`github`和各种各样的`git`工具上能有更好的可读性。
 
@@ -214,7 +214,7 @@ $ npm run commit
 
 操作示例：
 
-![image.png](../assets/git-commit.jpg)
+![image.png](../../assets/git-commit.jpg)
 
 #### GUI工具提交
 
@@ -260,7 +260,7 @@ _使用 `SourceTree` 这款软件提交信息也需要按规范填写。_
 
 在执行 `git` 提交信息时触发 `commit-msg` 钩子进行信息验证。**通过验证正常提交，未通过查看错误信息修改并重新修改**。
 
-![image.png](../assets/git-commit-update.jpg)
+![image.png](../../assets/git-commit-update.jpg)
 
 ## 结果展示
 

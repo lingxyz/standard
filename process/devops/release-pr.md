@@ -6,7 +6,7 @@
 
 ## 任务基本信息
 
-![jira-task](../assets/jira-task.jpg)
+![jira-task](../../assets/jira-task.jpg)
 
 ### 发布主题 <Badge text="必填" type="error"/>
 
@@ -59,7 +59,7 @@
 
 ## 任务技术信息
 
-![jira-tech-info](../assets/jira-tech-info.jpg)
+![jira-tech-info](../../assets/jira-tech-info.jpg)
 
 
 ### 发布步骤 <Badge text="选填" type="warning"/>

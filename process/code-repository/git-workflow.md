@@ -61,7 +61,7 @@
 
 ## 工作流
 
-![image.png](../assets/git-workflow.png)
+![image.png](../../assets/git-workflow.png)
 
 ### 需求开发
 

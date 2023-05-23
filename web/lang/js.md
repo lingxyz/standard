@@ -11,7 +11,7 @@ JavaScript 在前端一直有着广泛的应用，特别是在浏览器端的行
 - JavaScript 文件使用无`BOM`的`UTF-8`编码
 - 在文件结尾处，保留一个空行
 
-更加详细的**编辑器**及**代码文件**推荐[传送门](/frontend/standard/editor.html)
+更加详细的**编辑器**及**代码文件**推荐[传送门](https://frontend/standard/editor.html)
 
 ## 细则
 

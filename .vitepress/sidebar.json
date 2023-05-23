@@ -1,0 +1,143 @@
+{
+  "/process/": [ {
+    "text": "开发流程",
+    "items": [
+      { "text": "开发流程规范", "link": "process/development-process" },
+      { "text": "技术需求规范", "link": "process/write-technical-requirements" }
+    ]
+  }, {
+    "text": "代码仓库规范",
+    "items": [
+      { "text": "Gitlab 使用规范", "link": "process/code-repository/gitlab-usage" },
+      { "text": "Git 版本管理规范", "link": "process/code-repository/git-workflow" },
+      { "text": "Git 提交信息规范", "link": "process/code-repository/git-commit-message" }
+    ]
+  }, {
+    "text": "测试规范化",
+    "items": [
+      { "text": "数据模拟：前端框架内部mock集成", "link": "" },
+      { "text": "接口展示、模拟与测试平台Yapi", "link": "" },
+      { "text": "应用错误监控与报警", "link": "process/test/client-error-monitor" },
+      { "text": "单元测试 待扩充", "link": "" },
+      { "text": "集成测试 待扩充", "link": "" }
+    ]
+  }, {
+    "text": "集成发布规范化",
+    "items": [
+      { "text": "构建与发布规范", "link": "" },
+      { "text": "发布流程规范", "link": "process/devops/release-flow" },
+      { "text": "Jira项目发布任务信息说明", "link": "process/devops/release-pr" },
+      { "text": "CDN建设与非覆盖式发布", "link": "" },
+      { "text": "本地Docker构建统一环境", "link": "" }
+    ]
+  }],
+  "/web/": [{
+    "text": "公约",
+    "items": [
+      { "text": "技术选型公约", "link": "web/convention/selection-convention" }
+    ]
+  }, {
+    "text": "代码规范化",
+    "items": [
+      {
+        "text": "基础语言规范",
+        "items": [
+          { "text": "HTML规范", "link": "web/lang/html" },
+          { "text": "HTML-Vue规范", "link": "web/lang/html-vue" },
+          { "text": "CSS 规范", "link": "web/lang/css" },
+          { "text": "CSS-BEM 规范", "link": "web/lang/css-bem" },
+          { "text": "JavaScript 规范", "link": "web/lang/js" },
+          { "text": "TypeScript 规范", "link": "" },
+          { "text": "Node.js 规范", "link": "" }
+        ]
+      }, {
+        "text": "预编译器规范",
+        "items": [
+          { "text": "Pug 规范", "link": "" },
+          { "text": "Stylus 规范", "link": "" }
+        ]
+      }, {
+        "text": "框架语言规范",
+        "items": [
+          { "text": "HTML-Vue 规范", "link": "" },
+          { "text": "Vue 规范", "link": "" },
+          { "text": "Egg.js 规范", "link": "" },
+          { "text": "Nest.js 规范", "link": "" }
+        ]
+      }, {
+        "text": "代码编写规范",
+        "items": [
+          { "text": "代码注释规范", "link": "web/code-edit/code-comment" },
+          { "text": "代码检测规范", "link": "web/code-edit/code-lint" },
+          { "text": "编辑器使用推荐-VSCode", "link": "" }
+        ]
+      }
+    ]
+  }, {
+    "text": "框架规范化",
+    "items": [{
+      "text": "项目目录结构规范",
+      "items": [
+        { "text": "Vue 项目目录结构规范", "link": "" },
+        { "text": "Nuxt 项目目录结构规范", "link": "" },
+        { "text": "mpvue 项目目录结构规范", "link": "" },
+        { "text": "Cordova 项目目录结构规范", "link": "" },
+        { "text": "Flutter 项目目录结构规范", "link": "" },
+        { "text": "Node 项目目录结构规范", "link": "" }
+      ]
+    }, {
+      "text": "脚手架",
+      "items": [
+        { "text": "命令行", "link": "" },
+        { "text": "可视化", "link": "" }
+      ]
+    }, {
+      "text": "框架模板",
+      "items": [
+        { "text": "web：Vue-template", "link": "" },
+        { "text": "web：Nuxt-template", "link": "" },
+        { "text": "小程序：mpvue-template", "link": "" },
+        { "text": "hybird：Cordova-template", "link": "" },
+        { "text": "native：Flutter-template", "link": "" },
+        { "text": "node：Egg-template", "link": "" },
+        { "text": "node：Nest-template", "link": "" }
+      ]
+    }, {
+      "text": "组件/插件/中间件开发模板",
+      "items": [
+        { "text": "js-plugin-template", "link": "" },
+        { "text": "Vue-component-template", "link": "" }
+      ]
+    }]
+  }, {
+    "text": "组件规范化",
+    "items": [
+      { "text": "NPM 包管理规范", "link": "web/components/npm-package" },
+      { "text": "NPM 私服使用规范", "link": "web/components/npm-private-server" },
+      { "text": "JavaScript 插件：JS 工具函数 / Fetch / Cordova-plugins / 短信发送", "link": "" },
+      { "text": "Vue 插件：过滤器 / 转场动画 / 路由生成", "link": "" },
+      { "text": "Vue H5 组件库", "link": "" },
+      { "text": "Vue 中后台组件库", "link": "" },
+      { "text": "mpvue 组件库", "link": "" },
+      { "text": "Cordova 组件库", "link": "" },
+      { "text": "Flutter 组件库", "link": "" },
+      { "text": "Egg.js 中间件", "link": "" },
+      { "text": "Nest 中间件", "link": "" }
+    ]
+  }, {
+    "text": "数据结构规范化",
+    "items": [
+      { "text": "JavaScript 数据结构规范", "link": "web/data/structure" }
+    ]
+  }],
+  "/java": [
+    { "text": "Java 规范", "link": "java/java" },
+    { "text": "REATful API 规范", "link": "java/restful-api" },
+    { "text": "数据存储规范", "link": "" },
+    { "text": "数据流转规范", "link": "" },
+    { "text": "数据库设计规范", "link": "" },
+    { "text": "日志规范", "link": "" },
+    { "text": "高并发编程规范", "link": "" },
+    { "text": "分布式设计规范", "link": "" }
+  ]
+}
