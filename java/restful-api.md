@@ -1,11 +1,6 @@
----
-author: 阮一峰
-original: 'http://www.ruanyifeng.com/blog/2018/10/restful-api-best-practices.html'
----
-
 # REATful API 规范
 
-`RESTful`是目前最流行的`API`设计规范，用于`Web`数据接口的设计。它的大原则容易把握，但是细节不容易做对。本文总结`RESTful`的设计细节，介绍如何设计出易于理解和使用的`API`。
+`RESTful`是目前最流行的`API`设计规范，用于`Web`数据接口的设计。
 
 ## URL 设计
 
@@ -169,6 +164,17 @@ Location: /api/orders/12345
 
 ## 服务器回应
 
+接口返回的 Response 数据由以下字段组成：
+
+| 字段名 | 是否必须 | 类型 | 描述 |
+| ------ | -------- | ---- | ---- |
+| code | √ | int | 处理成功与否（200成功，其他异常） |
+| obj | √ | object | 返回数据主体，可为空 |
+| msg（message） | √ | string | 返回结果描述（异常时此字段不能为空） |
+| error |  | string | 返回异常信息 |
+| date |  | date | 返回数据时的时间 |
+| path |  | string | 返回数据的接口名 |
+
 ### 不要返回纯本文
 
 `API`返回的数据格式，不应该是纯文本，而应该是一个`JSON`对象，因为这样才能返回标准的结构化数据。所以，服务器回应的`HTTP`头的`Content-Type`属性要设为`application/json`。
@@ -250,4 +256,4 @@ Content-Type: application/json
 
 * [RESTful API Design: 13 Best Practices to Make Your Users Happy](https://blog.florimondmanca.com/restful-api-design-13-best-practices-to-make-your-users-happy), by Florimond Manca
 * [API design](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design), by MicroSoft Azure
-
+* [RESTful API 最佳实践](http://www.ruanyifeng.com/blog/2018/10/restful-api-best-practices.html), by 阮一峰
